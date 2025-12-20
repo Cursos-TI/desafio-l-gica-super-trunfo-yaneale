@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-printf("* Desafio Super Trunfo - Países*");
+//printf("Desafio Super Trunfo - Países");
 // Tema 2 - Comparação das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
 // Siga os comentários para implementar cada parte do desafio.
@@ -58,28 +58,31 @@ int main() {
   //Calcular a densidade da população
   densidade1 = (float) populacao1 / area1;
   densidade2 = (float) populacao2 / area2;
-
+  printf("Densidade da população da carta 1 (%s) é: %.2f\n", cidade1, densidade1);
+  printf("Densidade da população da carta 2 (%s) é: %.2f\n" , cidade2, densidade2);
   //Calcular o PIB per capita
   percapita1 = (float) pib1 / populacao1;
   percapita2 = (float) pib2 / populacao2;
+  printf("PIB per capita da carta 1 (%s) é: %.2f\n", cidade1, percapita1);
+  printf("PIB per capita da carta 2 (%s) é: %.2f\n" , cidade2, percapita2);
 
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
-    
-    if (percapita1 > percapita2) {
-         printf("Carta 1 %s venceu!.\n"), cidade1;
-     } else {
-         printf("Carta 2 %s venceu!.\n"), cidade2;
-     }
+    printf("\nComparação de cartas (Atributo: Percapita)\n\n");
+    printf("Carta 1 - %s (%s): %.2f\n", cidade1, estado1, percapita1);
+    printf("Carta 2 - %s (%s): %.2f\n", cidade2, estado2, percapita2);
 
     // Exibição dos Resultados:
     // Após realizar as comparações, exiba os resultados para o usuário.
     // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-     printf("A cidade vencedora é: %s\n", cidadeVencedora);
+    if (percapita1 > percapita2) {
+         printf("Resultado: Carta 1 (%s) VENCEU \n", cidade1);
+     } else if (percapita2 > percapita1){
+        printf("Resultado: Carta 2 (%s) VENCEU \n", cidade2);
+     } else {
+         printf("Resultado: EMPATE!.\n"), cidade2;
+     } 
 
     return 0;
 }
