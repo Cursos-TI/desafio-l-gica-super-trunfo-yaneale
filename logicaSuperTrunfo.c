@@ -69,6 +69,7 @@ int main() {
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
+    printf("Escolhendo o atributo de comparação")
     printf("\nComparação de cartas (Atributo: Percapita)\n\n");
     printf("Carta 1 - %s (%s): %.2f\n", cidade1, estado1, percapita1);
     printf("Carta 2 - %s (%s): %.2f\n", cidade2, estado2, percapita2);
